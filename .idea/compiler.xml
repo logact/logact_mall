@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="product" />
+        <module name="common" />
+        <module name="order" />
+        <module name="ware" />
+        <module name="member" />
+        <module name="renren-generator" />
+        <module name="renrenfast" />
+      </profile>
+      <profile name="Annotation profile for logact_mall" enabled="true">
+        <sourceOutputDir name="../order/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../order/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="coupon" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demotest" target="1.8" />
+      <module name="generator" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="coupon" options="-parameters" />
+      <module name="demotest" options="-parameters" />
+      <module name="generator" options="-parameters" />
+      <module name="member" options="-parameters" />
+      <module name="order" options="-parameters" />
+      <module name="product" options="-parameters" />
+      <module name="renren-generator" options="-parameters" />
+      <module name="renrenfast" options="-parameters" />
+      <module name="ware" options="-parameters" />
+    </option>
+  </component>
+</project>
